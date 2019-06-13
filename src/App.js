@@ -43,6 +43,7 @@ class App extends Component {
             <h3><span></span>Caracteristicas</h3>
             <Carousel />
           </div>
+          
         </div>
         <div style={{height: '700px'}}></div>
       </div>
