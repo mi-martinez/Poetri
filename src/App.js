@@ -6,6 +6,8 @@ import Backdrop from './components/Backdrop/Backdrop';
 import Banner from './components/Banner/Banner';
 import SectionLogos from './components/SectionLogos/SectionLogos';
 import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
+import Carousel from './components/CarouselFeatures/CarouselFeatures';
+
 
 class App extends Component {
   state = {
@@ -37,6 +39,10 @@ class App extends Component {
         <SectionLogos />
         <div className="container">
           <DiscoverPoetri />
+          <div className="section-carousel-features">
+            <h3><span></span>Caracteristicas</h3>
+            <Carousel />
+          </div>
         </div>
         <div style={{height: '700px'}}></div>
       </div>
