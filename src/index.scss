@@ -18,8 +18,32 @@
 }
 body {
   margin: 0;
-  font-family: 'ObjektivMk1W03-Medium' !important;
+  font-family: 'ObjektivMk1W03-Regular' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #E5E5E5 !important;
+  background: linear-gradient(90deg, #F1F1F1 0%, #FFFFFF 50.27%, #F1F1F1 100%);
+}
+p{
+  font-family: 'ObjektivMk1W03-Thin';
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.container{
+  max-width: 1300px !important;
+  margin: 0 auto;
+}
+h2{
+  font-family: 'ObjektivMk1W03-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 47px;
+}
+h3{
+  font-family: 'ObjektivMk1W03-Medium';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000000;
 }

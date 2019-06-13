@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import Banner from './components/Banner/Banner';
+import SectionLogos from './components/SectionLogos/SectionLogos';
+import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
 
 class App extends Component {
   state = {
@@ -30,10 +33,12 @@ class App extends Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{marginTop: '64px'}}>
-          <p>This is the page content!</p>
-        </main>
-
+        <Banner />
+        <SectionLogos />
+        <div className="container">
+          <DiscoverPoetri />
+        </div>
+        <div style={{height: '700px'}}></div>
       </div>
     );
   }

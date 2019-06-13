@@ -1,0 +1,99 @@
+.section-discover-poetri{
+  margin-top: 55px;
+  h2{
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  h3{
+    position: relative;
+    padding-left: 30px;
+    span{
+      position: absolute;
+      width: 33px;
+      height: 65px;
+      top: 0;
+      left: -20px;
+      background: #000;
+      z-index: 2;
+    }
+  }
+  .row-table--margin{
+    margin-top: 50px;
+  }
+
+  .benefits-table{
+    width: 72%;
+    display: flex;
+    background: linear-gradient(169.17deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 117.36%);
+    opacity: 0.98;
+    padding: 30px;
+    flex-wrap: wrap;
+    &__cell{
+      width: 100%;
+      display: flex;
+      .square{
+        background: #FBFBFB;
+        border: 1px solid #D7D7D7;
+        box-sizing: border-box;
+        width: 220px;
+        max-width: 220px;
+        min-height: 113px;
+        margin: 0 20px 20px 0;
+        padding: 0 10px 0 50px;
+        display: flex;
+        align-items: center;
+        font-family: 'ObjektivMk1W03-Regular';
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        position: relative;
+        &:before{
+          content: "";
+          width: 3px;
+          height: 50px;
+          background: #c4c4c4;
+          position: absolute;
+          top: -1px;
+          left: -3px;
+        }
+        &:last-child{
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+  .before--rotate{
+    position: relative;
+    overflow: hidden;
+    &:before{
+      content: "";
+      background: url('../../assets/images/bg-discover.png') no-repeat center center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      animation: rotate;
+      -webkit-animation-name: rotate;
+      -webkit-animation-duration:200s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:linear;
+      -moz-animation-name: rotate;
+      -moz-animation-duration:200s;
+      -moz-animation-iteration-count:infinite;
+      -moz-animation-timing-function:linear;
+    }
+  }
+  @keyframes rotate {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+  @-webkit-keyframes rotate {
+    from {-webkit-transform:rotate(0deg);}
+    to {  -webkit-transform:rotate(360deg);}
+  }
+
+  @-moz-keyframes rotate {
+    from {-moz-transform:rotate(0deg);}
+    to {  -moz-transform:rotate(360deg);}
+  }
+}

@@ -10,14 +10,17 @@ const sideDrawer = props => {
   return (
     <nav className={drawerClasses}>
       <ul>
-        <li>
-          <a href="/">Products</a>
-        </li>
-        <li>
-          <a href="/">Users</a>
-        </li>
+          <li><a href="/">Caracteristicas</a></li>
+          <li><a href="/">¿Comó funciona?</a></li>
+          <li><a href="/">Precios</a></li>
+          <li><a href="/">Documentación</a></li>
       </ul>
+      <div className="toolbar_buttons-drawer">
+          <a href="/">Solicitar Asesoria</a>
+          <a href="/">Registrate Gratis</a>
+      </div>
     </nav>
+
   );
 };
 
