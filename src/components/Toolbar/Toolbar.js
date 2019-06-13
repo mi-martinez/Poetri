@@ -17,7 +17,7 @@ const toolbar = props => (
 
         <div className="toolbar_navigation-items">
             <ul>
-                <li><a href="/">CaracteristicasNMZ</a></li>
+                <li><a href="/">Caracteristicas</a></li>
                 <li><a href="/">¿Comó funciona?</a></li>
                 <li><a href="/">Precios</a></li>
                 <li><a href="/">Documentación</a></li>
