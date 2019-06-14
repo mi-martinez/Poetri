@@ -62,7 +62,7 @@
          font-size: 14px;
          line-height: 19px;
          &:hover{
-           color: #00FF29;
+           color: #c4c4c4;
          }
        }
     }
@@ -75,20 +75,81 @@
       }
       :nth-child(1){
         color: #000000;
-        background: #F5F5F5;
         border: 1px solid #000000;
         box-sizing: border-box;
         margin-right: 12px;
+        position: relative;
+        z-index: 0;
+        transition: all .3s;
+        &:before{
+          content: '';
+          height: 100%;
+          width: 100%;
+          background: #000;
+          position: absolute;
+          top: 0;
+          right: 0;
+          transition: all .3s;
+          z-index: -1;
+          transform: scale(0, 0);
+        }
+        &:after{
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: #F5F5F5;
+          z-index: -2;
+
+        }
+        &:hover{
+          color: #00FF29;
+          &:before{
+            transform: scale(1, 1);
+          }
+        }
       }
       :nth-child(2){
         color: #00FF29;
-        background-color: #000000;
         background-image: url('../../assets/images/enter.svg');
         background-repeat: no-repeat;
         background-position: 15px center;
         border: 1px solid #000000;
         box-sizing: border-box;
         padding-left: 45px;
+        position: relative;
+        &:before{
+          content: '';
+          height: 100%;
+          width: 100%;
+          background: #f5f5f5;
+          position: absolute;
+          top: 0;
+          right: 0;
+          transition: all .3s;
+          z-index: -1;
+          transform: scale(0, 0);
+        }
+        &:after{
+          content: '';
+          height: 100%;
+          width: 100%;
+          background-color: #000000;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -2;
+
+        }
+        &:hover{
+          color: #000000;
+          &:before{
+            transform: scale(1, 1);
+          }
+        }
+
       }
       a{
         padding: 10px 17px;

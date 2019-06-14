@@ -12,7 +12,9 @@ export default class SlideChangeHooks extends Component {
   };
   render() {
     const settings = {
+      className: "slider variable-width",
       dots: true,
+      centerMode: true,
       infinite: true,
       speed: 1000,
       autoplay: true,
@@ -34,22 +36,29 @@ export default class SlideChangeHooks extends Component {
         </div>
         <Slider {...settings}>
           <div className="square">
-            Paga unicamente el tiempo cuando se ejecuta tu código.
+            Solo pagas cuando se ejecuta tu código
           </div>
           <div className="square">
-            Implementa tu codifo en segundos
+            Implementa tu codigo en segundos.
           </div>
           <div className="square">
-            Reduce costos operativos y en infraestructura hasta en un 70%.
+            No requiere configuraciones adicionales
           </div>
           <div className="square">
-            Implementa tu codifo en segundos
+            Soporta varios lenguajes
           </div>
           <div className="square">
-            Se paga solamente por el tiempo en ejecución. Con Poetri cero costos ocultos.
+            Rentabiliza funciones
           </div>
           <div className="square">
-            Conecta y amplía los servicios en la nube.
+            Escalar automaticamente
+          </div>
+          <div className="square">
+            Reutilizacion de codigo
+            “entrega continua de codigo”
+          </div>
+          <div className="square">
+            Seguridad ... Los datos viajan protegídos de extremos a extremos.
           </div>
         </Slider>
       </div>
