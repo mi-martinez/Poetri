@@ -7,6 +7,8 @@ import Banner from './components/Banner/Banner';
 import SectionLogos from './components/SectionLogos/SectionLogos';
 import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
 import Carousel from './components/CarouselFeatures/CarouselFeatures';
+import HowFunction from './components/HowFunction/HowFunction';
+
 
 
 class App extends Component {
@@ -38,12 +40,24 @@ class App extends Component {
         <Banner />
         <SectionLogos />
         <div className="container">
-          <DiscoverPoetri />
-          <div className="section-carousel-features">
-            <h3><span></span>Caracteristicas</h3>
-            <Carousel />
-          </div>
-          
+              <DiscoverPoetri />
+              <div className="section-carousel-features">
+                <h3><span></span>Caracteristicas</h3>
+                <Carousel />
+              </div>
+              <div className="row section-done-poetri col-10 m-auto justify-content-center">
+                  <h2>¿Qué se puede hacer con Poetri?</h2>
+                  <div className="col-lg-6">
+                  </div>
+                  <div className="col-lg-6 section-done-poetri__gif">
+                      GIF o MP4
+                      Peticiones con Serveless Todo funciona bien Developer feliz
+                  </div>
+                  <p>Con Poetri, podras ejecutar código para casi cualquier tipo de aplicación o servicio back-end sin tener que realizar tareas de administración. Es facil, cargas tu código y Poetri se encarga de todo lo necesario para ejecutar y escalar el código.</p>
+              </div>
+        </div>
+        <div className="row-content-how-function">
+          <HowFunction/>
         </div>
         <div style={{height: '700px'}}></div>
       </div>
