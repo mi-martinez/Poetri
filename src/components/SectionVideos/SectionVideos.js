@@ -3,6 +3,7 @@ import Slider from "react-slick";
 
 import PlayButton from '../../assets/images/play-button.svg';
 import LogoLiftit from '../../assets/images/logo-liftit-x62.png';
+import Lenguajes from '../../assets/images/lenguajes.png';
 
 import './SectionVideos.scss';
 
@@ -13,15 +14,22 @@ export default class BackgroundSlide extends Component {
     const settings = {
       dots: true,
       speed: 1000,
-      autoplay: false,
-      autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 5000,
       pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
       <div className="slide-background">
-
+        <div className="slide-background__infostatic">
+          <div className="slide-background__infostatic-content">
+            <h2>¿Qué sucede cuando se usa Poetri?</h2>
+            <p>Las empresas dejan de preocuparse por la infraestructura, por la tecnologia, y generan mayor valor a sus clientes.</p>
+            <p>Poetri soporta los principales lenguajes de programación (Poetri Poliglota).</p>
+          </div>
+          <img src={Lenguajes} />
+        </div>
         <Slider {...settings}>
           <div className="slide-background__content bg-slide1">
             <div className="slide-background__content-container">
@@ -38,8 +46,8 @@ export default class BackgroundSlide extends Component {
               </div>
             </div>
           </div>
-          <div className="slide-background__content9">
-            Solo pagas cuando se ejecuta tu código
+          <div className="slide-background__content bg-slide2">
+            Segundo Slide
           </div>
         </Slider>
       </div>
