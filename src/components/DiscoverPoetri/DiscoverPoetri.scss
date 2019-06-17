@@ -2,6 +2,7 @@
   margin-top: 55px;
   margin-bottom: 180px;
   position: relative;
+  overflow: hidden;
   &:before{
     content: "";
     background: url('../../assets/images/bg-discover-1.svg') no-repeat center center;

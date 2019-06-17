@@ -3,10 +3,29 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.scss";
 import IconConsume from '../../assets/images/consume-funciones.svg';
 import IconBuild from '../../assets/images/contruye-tu-proyecto.svg';
+import IconVideoPlayer from '../../assets/images/video-player.svg';
 
 import './HowFunction.scss';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-export default () => (
+
+
+class HowFunction extends React.Component {
+  state = {
+    value: 'functions.poetri.co/*function',
+    copied: false,
+  };
+  stateTwo = {
+    value: 'npm i -g @poetri/cli',
+    copied: false,
+  };
+  stateThree = {
+    value: 'poetri init',
+    copied: false,
+  };
+
+  render() {
+  return(
   <div className="section-how-function container">
     <div className="section-how-function__title">
       <h2>¿Comó funciona?</h2>
@@ -92,14 +111,107 @@ export default () => (
       </TabList>
 
       <TabPanel>
-        <h2>Any content 1</h2>
+        <div className="list-content">
+            <div className="list-content__item">
+              <span>1</span><p>Copia la URL con la ubicación de la función.</p>
+              <input disabled value={this.state.value} onChange={({target: {value}}) => this.setState({value, copied: false})} />
+                  <CopyToClipboard text={this.state.value} onCopy={() => this.setState({copied: true})}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M4.53063 0.712036H12.895C13.6617 0.712036 14.2891 1.33936 14.2891 2.1061V11.8645H12.895V2.1061H4.53063V0.712036ZM2.43953 3.50016H10.1069C10.8736 3.50016 11.5009 4.12749 11.5009 4.89422V14.6527C11.5009 15.4194 10.8736 16.0467 10.1069 16.0467H2.43953C1.6728 16.0467 1.04547 15.4194 1.04547 14.6527V4.89422C1.04547 4.12749 1.6728 3.50016 2.43953 3.50016ZM2.43953 14.6527H10.1069V4.89422H2.43953V14.6527Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="15.3347" height="15.3347" fill="white" transform="matrix(-1 0 0 1 15.3347 0.712036)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  </CopyToClipboard>
+            </div>
+            <div className="list-content__item">
+              <span>2</span>
+              <p>Establece los parametros necesarios.</p>
+            </div>
+            <div className="list-content__item">
+              <span>3</span>
+              <p>Ejecuta la función y consume cuantas veces la necesites.</p>
+            </div>
+            <div className="list-content__item justify-content-between">
+              <button>Ver Documentación</button>
+              <div className="conector"></div>
+              <figure>
+                <img src={IconVideoPlayer} alt="Logo" />
+              </figure>
+            </div>
+        </div>
       </TabPanel>
       <TabPanel>
-        <h2>Any content 2</h2>
+        <div className="list-content">
+          <div className="list-content__item">
+            <span>1</span>
+            <p>Indicanos que funcion necesitas desarrollar para tu empresa</p>
+          </div>
+          <div className="list-content__item">
+            <span>2</span>
+            <p>El equipo de Poetri le contactara para asesorarlo e indicarle como construir un proyecto con nuestra tecnologia.</p>
+          </div>
+          <div className="list-content__item">
+            <span>3</span>
+            <p>Ejecuta la función y consume cuantas veces la necesites.</p>
+          </div>
+        </div>
       </TabPanel>
       <TabPanel>
-        <h2>Any content 2</h2>
+      <div className="list-content">
+          <div className="list-content__item">
+            <span>1</span><p>Descarga e instala el CLI para comenzar.</p>
+            <input disabled value={this.stateTwo.value} onChange={({target: {value}}) => this.setState({value, copied: false})} />
+                <CopyToClipboard text={this.stateTwo.value} onCopy={() => this.setState({copied: true})}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <g clip-path="url(#clip0)">
+                  <path d="M4.53063 0.712036H12.895C13.6617 0.712036 14.2891 1.33936 14.2891 2.1061V11.8645H12.895V2.1061H4.53063V0.712036ZM2.43953 3.50016H10.1069C10.8736 3.50016 11.5009 4.12749 11.5009 4.89422V14.6527C11.5009 15.4194 10.8736 16.0467 10.1069 16.0467H2.43953C1.6728 16.0467 1.04547 15.4194 1.04547 14.6527V4.89422C1.04547 4.12749 1.6728 3.50016 2.43953 3.50016ZM2.43953 14.6527H10.1069V4.89422H2.43953V14.6527Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="15.3347" height="15.3347" fill="white" transform="matrix(-1 0 0 1 15.3347 0.712036)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                </CopyToClipboard>
+          </div>
+          <div className="list-content__item">
+            <span>2</span>
+            <p>Desde la consola de comandos escribe:</p>
+            <input disabled value={this.stateThree.value} onChange={({target: {value}}) => this.setState({value, copied: false})} />
+                <CopyToClipboard text={this.stateThree.value} onCopy={() => this.setState({copied: true})}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <g clip-path="url(#clip0)">
+                  <path d="M4.53063 0.712036H12.895C13.6617 0.712036 14.2891 1.33936 14.2891 2.1061V11.8645H12.895V2.1061H4.53063V0.712036ZM2.43953 3.50016H10.1069C10.8736 3.50016 11.5009 4.12749 11.5009 4.89422V14.6527C11.5009 15.4194 10.8736 16.0467 10.1069 16.0467H2.43953C1.6728 16.0467 1.04547 15.4194 1.04547 14.6527V4.89422C1.04547 4.12749 1.6728 3.50016 2.43953 3.50016ZM2.43953 14.6527H10.1069V4.89422H2.43953V14.6527Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="15.3347" height="15.3347" fill="white" transform="matrix(-1 0 0 1 15.3347 0.712036)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                </CopyToClipboard>
+          </div>
+          <div className="list-content__item">
+            <span>3</span>
+            <p>Empieza a escribir tu código hecho poesia.</p>
+          </div>
+          <div className="list-content__item justify-content-between">
+            <button>Ver Documentación</button>
+            <div className="conector"></div>
+            <figure>
+              <img src={IconVideoPlayer} alt="Logo" />
+            </figure>
+          </div>
+      </div>
       </TabPanel>
     </Tabs>
   </div>
-);
+    )
+  }
+};
+export default HowFunction;
