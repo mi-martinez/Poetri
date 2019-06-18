@@ -35,6 +35,9 @@
       &:after{
         display: none;
       }
+      &--selected{
+            transform: scale(1.04);
+      }
       &--name-function{
         position: relative;
         padding: 30px 0px 10px 20px;
