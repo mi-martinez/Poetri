@@ -9,6 +9,7 @@ import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
 import Carousel from './components/CarouselFeatures/CarouselFeatures';
 import HowFunction from './components/HowFunction/HowFunction';
 import SectionVideos from './components/SectionVideos/SectionVideos';
+import FunctionsPoetri from './components/FunctionsPoetri/FunctionsPoetri';
 
 
 
@@ -61,6 +62,9 @@ class App extends Component {
           <HowFunction/>
         </div>
         <SectionVideos/>
+        <div className="">
+          <FunctionsPoetri />
+        </div>
         <div style={{height: '700px'}}></div>
       </div>
     );

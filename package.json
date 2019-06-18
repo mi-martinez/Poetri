@@ -12,7 +12,9 @@
     "react-slick": "^0.24.0",
     "react-tabs": "^3.0.0",
     "reactstrap": "^8.0.0",
-    "slick-carousel": "^1.8.1"
+    "redux": "^4.0.1",
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
