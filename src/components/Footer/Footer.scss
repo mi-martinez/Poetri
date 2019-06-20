@@ -1,0 +1,30 @@
+footer{
+  background: #000;
+  padding: 45px 0;
+  border-bottom: 17px solid #171717;
+  margin-top: 100px;
+  h2{
+    font-size: 14px;
+    line-height: 19px;
+    color: #393939;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 15px;
+  }
+  a{
+    font-family: 'ObjektivMk1W03-Regular';
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.47);
+    display: flex;
+    margin-bottom: 10px;
+    &:hover{
+      color: #fff;
+    }
+  }
+  .icon-redes {
+    img{
+      margin-right: 10px;
+    }
+  }
+}

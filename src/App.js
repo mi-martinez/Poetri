@@ -11,7 +11,7 @@ import HowFunction from './components/HowFunction/HowFunction';
 import SectionVideos from './components/SectionVideos/SectionVideos';
 import FunctionsPoetri from './components/FunctionsPoetri/FunctionsPoetri';
 import ChoosePoetri from './components/ChoosePoetri/ChoosePoetri';
-
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
@@ -67,7 +67,7 @@ class App extends Component {
         <div className="container">
           <ChoosePoetri />
         </div>
-        <div style={{height: '700px'}}></div>
+        <Footer />
       </div>
     );
   }
