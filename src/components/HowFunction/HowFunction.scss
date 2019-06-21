@@ -7,7 +7,7 @@
   margin-top: 70px;
   padding: 100px 0;
   &__title{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     h2{
       color: #fff;
       margin-bottom: 25px;
@@ -24,7 +24,7 @@
       font-size: 14px;
       line-height: 19px;
       &:hover{
-        color: #363636;
+        color: #f5f4f4;
       }
     }
   }
@@ -41,10 +41,13 @@
       box-sizing: border-box;
       border-radius: 0;
       margin-bottom: 20px;
+      padding: 8px;
+      transition: all 0.5s ease;
       &-contain{
         display: flex;
         color: #fff;
         align-items: center;
+        transition: all 0.5s ease;
         span{
           display: flex;
           justify-content: center;
@@ -52,10 +55,25 @@
           width: 108px;
           height: 108px;
           border: 1px solid #2F2F2F;
+          transition: all 0.5s ease;
+        }
+        .poetri-dev svg {
+          width: 64px;
+          margin-left: -10px;
+          margin-top: -6px;
+        }
+        .consume svg {
+          width: 53px;
+          margin-left: -3px;
+        }
+        .create svg {
+          width: 64px;
+          margin-left: -4px;
         }
         .descrip{
           width: 80%;
           padding: 0 0px 0 20px;
+          transition: all 0.5s ease;
           h4{
             color: #fff;
           }
@@ -75,17 +93,21 @@
         height: calc(100% + 2px);
         border: 1px solid #fff;
         top: -1px;
+        transition: all 0.5s ease;
       }
       &--selected{
         color: #00FF29;
         border-color: #00FF29 !important;
         border-right: none;
+        transition: all 0.5s ease;
         .react-tabs__tab-contain{
           span{
             border-color: #00FF29 !important;
+            transition: all 0.5s ease;
             svg{
               path{
                 fill: #00FF29;
+                transition: all 0.5s ease;
               }
             }
           }
@@ -98,7 +120,7 @@
         }
         &::before {
           content: "";
-          background: url('../../assets/images/arrow-green.svg') no-repeat 80% center;
+          background: url('../../assets/images/back.svg') no-repeat 80% center;
           position: absolute;
           right: -110px;
           width: 110px;
@@ -113,6 +135,9 @@
         background: rgba(0, 0, 0, 0.73);
         border: 1px solid #00FF29;
         box-sizing: border-box;
+        left: -20px !important;
+        position: relative;
+        height: 419px;
         .list-content{
               padding: 0 30px 0 0;
           &__item{
@@ -133,7 +158,7 @@
               position: absolute;
               text-align: center;
               left: -25px;
-              top: 30px;
+              top: 20px;
               background: black;
               }
               p{
@@ -148,12 +173,13 @@
                 padding: 5px 10px;
                 font-size: 14px;
                 line-height: 18px;
-                width: 90%;
+                width: 100%;
                 border-color: transparent;
+                font-family: 'Space Mono', monospace;
               }
               svg{
                 position: absolute;
-                right: 58px;
+                right: 12px;
                 top: 75px;
                 cursor: pointer;
                 &:hover{
@@ -161,18 +187,18 @@
                 }
               }
               button {
-                color: #00ff29;
+                color: #f2f2f2;
                 border-radius: 20px;
-                background: black;
-                border: 1px solid #00ff29;
+                background: #c3c3c329;
+                border: 1px solid #f1f1f1;
                 box-sizing: border-box;
-                padding: 5px 30px;
-                font-size: 20px;
-                line-height: 27px;
+                padding: 4px 22px;
+                font-size: 14px;
+                line-height: 26px;
                 font-family: 'ObjektivMk1W03-Thin';
               }
               .conector {
-                width: 21%;
+                width: 20px;
                 height: 1px;
                 background: #fff;
               }
@@ -193,4 +219,7 @@
 
     }
   }
+}
+.react-tabs__tab:focus:after {
+  height: 0px !important;
 }

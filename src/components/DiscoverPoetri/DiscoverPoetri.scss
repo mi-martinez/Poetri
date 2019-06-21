@@ -12,18 +12,20 @@
     top: 0;
     animation: rotate;
     -webkit-animation-name: rotate;
-    -webkit-animation-duration:150s;
+    -webkit-animation-duration:50s;
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
     -moz-animation-name: rotate;
-    -moz-animation-duration:150s;
+    -moz-animation-duration:50s;
     -moz-animation-iteration-count:infinite;
     -moz-animation-timing-function:linear;
+    opacity: 0.3;
   }
 
   h2{
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
+    margin-top: 40px;
   }
   h3{
     position: relative;
@@ -36,6 +38,7 @@
       left: -20px;
       background: #000;
       z-index: 2;
+      border-right: 6px solid #00ff29;
     }
   }
   .row-table--margin{
@@ -47,7 +50,7 @@
   .benefits-table{
     width: 72%;
     display: flex;
-    background: linear-gradient(169.17deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 117.36%);
+    /* background: linear-gradient(169.17deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 117.36%); */
     opacity: 0.98;
     padding: 30px;
     flex-wrap: wrap;
@@ -62,14 +65,26 @@
         max-width: 220px;
         min-height: 113px;
         margin: 0 20px 20px 0;
-        padding: 0 10px 0 50px;
+        padding: 0 16px 0 16px;
         display: flex;
         align-items: center;
         font-family: 'ObjektivMk1W03-Regular';
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 13px;
+        line-height: 20px;
         color: #000000;
         position: relative;
+        transition: all 0.5s ease;
+        &:hover{
+          transform: scale(1.12);
+          transition: all 0.5s ease;
+          background: #fff !important;
+          box-shadow: 0px 2px 30px #0000002e;
+          z-index: 9 !important;
+          border: 1px solid #828282 !important;
+          &:before{
+            background: #8f8f8f;
+          }
+        }
         &:before{
           content: "";
           width: 3px;
@@ -97,13 +112,14 @@
       top: 0;
       animation: rotate;
       -webkit-animation-name: rotate;
-      -webkit-animation-duration:250s;
+      -webkit-animation-duration:150s;
       -webkit-animation-iteration-count:infinite;
       -webkit-animation-timing-function:linear;
       -moz-animation-name: rotate;
-      -moz-animation-duration:250s;
+      -moz-animation-duration:150s;
       -moz-animation-iteration-count:infinite;
       -moz-animation-timing-function:linear;
+      opacity: 0.4;
     }
     &:after{
       content: "";
@@ -114,14 +130,15 @@
       top: 0;
       animation: rotate;
       -webkit-animation-name: rotate;
-      -webkit-animation-duration:300s;
+      -webkit-animation-duration:30s;
       -webkit-animation-iteration-count:infinite;
       -webkit-animation-timing-function:linear;
       -moz-animation-name: rotate;
-      -moz-animation-duration:300s;
+      -moz-animation-duration:30s;
       -moz-animation-iteration-count:infinite;
       -moz-animation-timing-function:linear;
       z-index: 3;
+      opacity: 0.5;
     }
   }
   @keyframes rotate {

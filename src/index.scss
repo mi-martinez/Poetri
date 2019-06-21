@@ -26,8 +26,8 @@ body {
 }
 p{
   font-family: 'ObjektivMk1W03-Thin';
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 29px;
   color: #000000;
 }
 .container{
@@ -62,14 +62,16 @@ a{
 }
 .section-done-poetri {
     background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 20px #DBDBDB;
     border-radius: 5px;
     padding: 55px 65px !important;
     text-align: center;
-    margin-bottom: 150px;
+    margin: 0 auto 110px !important;
     h2{
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 28px;
+      font-size: 26px;
+      margin-top: -10px;
     }
     &__gif{
       background: #C4C4C4;
@@ -80,8 +82,32 @@ a{
       flex-wrap: wrap;
     }
     p{
-      margin-top: 35px;
+      font-family: 'ObjektivMk1W03-Thin';
+      font-size: 16px;
+      line-height: 29px;
+      margin-bottom: -15px;
+      margin-top: 10px;
     }
+    p.p-st {
+      margin-top: 40px !important;
+    }
+}
+.section-done-poetri-img{ 
+img {
+  width: 100%;
+  max-width: 110px;
+}
+p {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-top: 20px !important;
+}
+.img-g {
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 .modal{
   background: rgb(0,0,0);
