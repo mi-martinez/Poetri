@@ -3,12 +3,11 @@
     background: #eaeaea;
     text-align: center;
     padding: 15px 0;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 27px;
     color: #7A7A7A;
     margin-bottom: 0px;
     font-family: 'ObjektivMk1W03-Medium';
-    
   }
   &__enterprise{
     display: flex;
@@ -18,9 +17,11 @@
     img{
       filter: grayscale(100%);
       opacity: .5;
+      transition: all 0.5s ease;
       &:hover{
         filter: grayscale(0%);
         opacity: 1;
+        transition: all 0.5s ease;
       }
     }
   }
@@ -37,14 +38,14 @@
     }
     span{
       display: block;
-      padding: 7px 30px;
+      padding: 4px 0px;
       background: #FFFFFF;
       border: 1px solid #BCBCBC;
       box-sizing: border-box;
       border-radius: 50px;
-      max-width: 430px;
+      max-width: 320px;
       margin: auto;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 27px;
       text-align: center;
       font-family: 'ObjektivMk1W03-Thin';

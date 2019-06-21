@@ -19,17 +19,19 @@
       left: -20px;
       background: #000;
       z-index: 2;
+      border-right: 6px solid #00ff29;
     }
   }
   .square{
     background: #FBFBFB;
     border: 1px solid #D7D7D7;
     box-sizing: border-box;
-    width: 95% !important;
-    max-width: 265px;
+    width: 98% !important;
+    max-width: 290px;
+    min-width: 290px;
     min-height: 130px;
     margin: 0 20px 20px 0;
-    padding: 0 10px 0 50px;
+    padding: 0 10px 0 22px;
     display: inline-flex !important;
     align-items: center;
     font-family: 'ObjektivMk1W03-Medium';
@@ -37,6 +39,8 @@
     line-height: 21px;
     color: #000000;
     position: relative;
+    opacity: 0.2 !important;
+    transition: all 0.5s ease !important;
     &:before{
       content: "";
       width: 3px;
@@ -52,6 +56,7 @@
     min-height: 280px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 5px 20px #DBDBDB;
     p{
       font-size: 16px;
       line-height: 22px;
@@ -129,8 +134,11 @@
 .slick-active{
   .square{
     border: 1px solid #000000;
+    opacity: 1 !important;
+    transition: all 0.5s ease;
     &:before{
       background: #000;
+      transition: all 0.5s ease !important;
     }
   }
   button{

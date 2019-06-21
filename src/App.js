@@ -12,6 +12,9 @@ import SectionVideos from './components/SectionVideos/SectionVideos';
 import FunctionsPoetri from './components/FunctionsPoetri/FunctionsPoetri';
 import ChoosePoetri from './components/ChoosePoetri/ChoosePoetri';
 import Footer from './components/Footer/Footer';
+import ImgGif from './assets/images/poetri-dev.png';
+import ImgGif2 from './assets/images/create.png';
+import ImgGif3 from './assets/images/consume.png';
 
 
 class App extends Component {
@@ -48,15 +51,21 @@ class App extends Component {
                 <h3><span></span>Caracteristicas</h3>
                 <Carousel />
               </div>
-              <div className="row section-done-poetri col-10 m-auto justify-content-center">
+              <div className="row section-done-poetri col-10 justify-content-center">
                   <h2>¿Qué se puede hacer con Poetri?</h2>
-                  <div className="col-lg-6">
+                  <div className="col-lg-4 section-done-poetri-img">
+                    <div className="img-g"><img src={ImgGif}/> </div>
+                    <p className="img-p">Poetri crea tu función.</p>
                   </div>
-                  <div className="col-lg-6 section-done-poetri__gif">
-                      GIF o MP4
-                      Peticiones con Serveless Todo funciona bien Developer feliz
+                  <div className="col-lg-4 section-done-poetri-img">
+                     <div className="img-g"> <img src={ImgGif2}/> </div>
+                     <p className="img-p">Crea tus propias funciones.</p>
                   </div>
-                  <p>Con Poetri, podras ejecutar código para casi cualquier tipo de aplicación o servicio back-end sin tener que realizar tareas de administración. Es facil, cargas tu código y Poetri se encarga de todo lo necesario para ejecutar y escalar el código.</p>
+                  <div className="col-lg-4 section-done-poetri-img">
+                     <div className="img-g"> <img src={ImgGif3}/> </div>
+                     <p className="img-p">Consume funciones.</p>
+                  </div>
+                  <p className="p-st">Con Poetri, podras ejecutar código para casi cualquier tipo de aplicación o servicio back-end sin tener que realizar tareas de administración. Es facil, cargas tu código y Poetri se encarga de todo lo necesario para ejecutar y escalar el código.</p>
               </div>
         </div>
         <div className="row-content-how-function">

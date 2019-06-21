@@ -1,5 +1,5 @@
 .banner-home{
-  height: 100vh;
+  height: calc(100vh - 57px);
   display: flex;
   align-items: center;
   &__left{
