@@ -27,9 +27,9 @@ const toolbar = props => (
                 <li><a href="/"><img src={IconSupport} alt="Logo" /></a></li>
             </ul>
         </div>
-        <div className="toolbar_buttons">
-            <a href="/">Solicitar Asesoria</a>
-            <a href="/">Registrate Gratis</a>
+        <div className="toolbar_buttons_nmz">
+            <a className="asesoria" href="/">Solicitar Asesoria</a>
+            <a className="register" href="/">Registrate Gratis</a>
         </div>
         <div className="toolbar__toggle-button">
             <DrawerToggleButton click={props.drawerClickHandler} />

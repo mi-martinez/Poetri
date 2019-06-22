@@ -56,16 +56,28 @@ export default class BackgroundSlide extends Component {
                   <img src={PlayButton} />
                 </figure>
                  <h5>Diego Campo</h5>
-                 <div>
+                 <div className="testimonial">
                     <span><img src={LogoLiftit}/></span>
-                    <p>Country</p>
-                    <p>Manager Colombia </p>
+                    <p className="name_bussi">Liftit</p>
+                    <p className="name_bussi_dev">Country Manager Colombia </p>
                  </div>
               </div>
             </div>
           </div>
           <div className="slide-background__content bg-slide2">
-            Segundo Slide
+          <div className="slide-background__content-container">
+              <div className="content-box" onClick={this.toggle}>{this.props.buttonLabel}
+                <figure>
+                  <img src={PlayButton} />
+                </figure>
+                 <h5>Angel Celis</h5>
+                 <div className="testimonial">
+                    <span><img src={LogoLiftit}/></span>
+                    <p className="name_bussi">Liftit</p>
+                    <p className="name_bussi_dev">COO Developer </p>
+                 </div>
+              </div>
+            </div>
           </div>
         </Slider>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>

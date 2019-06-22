@@ -179,3 +179,67 @@
     display: none;
   }
 }
+
+
+/* Michael */
+
+.toolbar_buttons_nmz:before {
+  content: " ";
+  height: 1px;
+  width: 1500px;
+  display: block;
+  position: absolute;
+  top: 35px;
+  z-index: 1;
+  background: #8e8e8e;
+}
+a.register {
+  display: inline-block;
+  padding: 3px 22px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50px;
+  max-width: 320px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #000;
+  margin-right: 25px;
+  font-family: ObjektivMk1W03-Regular;
+  transition: all 0.5s ease;
+  &:hover {
+    transition: all 0.5s ease;
+    background: #000;
+    color: #e6e6e6;
+    border: 1px solid #000000;
+    font-size: 16px;
+    padding: 6px 24px;
+    font-family: ObjektivMk1W03-Medium;
+}
+}
+a.asesoria {
+  display: inline-block;
+  padding: 4px 22px;
+  background: #ffffff;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+  border-radius: 50px;
+  max-width: 320px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #505050;
+  margin-right: 16px;
+  font-family: ObjektivMk1W03-Thin;
+  &:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+}

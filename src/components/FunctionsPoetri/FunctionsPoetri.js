@@ -26,7 +26,7 @@ class FunctionsPoetri extends React.Component{
                 <Tab className="react-tabs__tab last">
                   <div className="react-tabs__tab--name-function">
                     <p>Convertir Coordenadas a Direcciones</p>
-                    <span><img src={Energy} />397.326</span>
+                    <span><img src={Energy} />428.881</span>
                   </div>
                 </Tab>
               </TabList>

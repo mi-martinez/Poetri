@@ -23,8 +23,13 @@ footer{
     }
   }
   .icon-redes {
+      padding-top: 18px;
     img{
       margin-right: 10px;
+      opacity: 0.6;
+    &:hover{
+      opacity: 1;
+    }
     }
   }
 }

@@ -7,9 +7,14 @@
     h2{
       padding-right: 50px;
       margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 36px;
+      max-width: 410px;
     }
     p{
       margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 26px;
     }
   }
   .react-tabs{
@@ -31,12 +36,14 @@
       max-width: 236px;
       max-height: 186px;
       padding: 0;
+      transition: all .4s ease;
 
       &:after{
         display: none;
       }
       &--selected{
             transform: scale(1.04);
+            transition: all .4s ease;
       }
       &--name-function{
         position: relative;
@@ -72,6 +79,7 @@
          background: url('../../assets/images/bg-mac.png') no-repeat left top;
          background-size: initial;
          height: 657px;
+         margin-top: 50px;
          img{
            width: 168px;
            margin: 130px 0 25px 200px;
@@ -130,14 +138,14 @@
     position: relative;
     margin-top: 40px;
     &:before{
-      content: "";
-      background: #c4c4c4;
-      height: 1px;
-      width: 739px;
-      position: absolute;
-      top: 17px;
-      z-index: -1;
-      left: -20px;
+        content: "";
+        background: #c4c4c4;
+        height: 1px;
+        width: 110px;
+        position: absolute;
+        top: 17px;
+        z-index: -1;
+        right: -160px;
     }
     span{
       display: block;
@@ -146,24 +154,26 @@
       border: 1px solid #BCBCBC;
       box-sizing: border-box;
       border-radius: 50px;
-      max-width: 236px;
-      float: right;
-      font-size: 20px;
+      max-width: 162px;
+      margin: auto;
+      font-size: 16px;
       line-height: 27px;
       text-align: center;
       font-family: 'ObjektivMk1W03-Thin';
       position: relative;
       z-index: 1;
-      margin-right: -70px;
+      margin-right: -50px;
+      cursor: pointer;
     }
   }
   .cta-asesoria{
-    margin-top: 110px;
+    margin-top: 60px;
     p{
       font-family: 'ObjektivMk1W03-Medium';
-      font-size: 25px;
-      line-height: 34px;
       color: #000000;
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 36px;
     }
     a{
       color: #00FF29;
