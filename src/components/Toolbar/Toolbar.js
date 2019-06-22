@@ -5,9 +5,12 @@ import Logo from '../../assets/images/logo-poetri.svg';
 import IconSupport from '../../assets/images/support.svg';
 import IconRegister from '../../assets/images/enter.svg';
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Documentacion from '../Documentacion/Documentacion';
 import './Toolbar.scss';
 
 const toolbar = props => (
+  <Router>
   <header className="toolbar">
     <nav className="toolbar__navigation">
 
@@ -20,7 +23,7 @@ const toolbar = props => (
                 <li><a href="/">Caracteristicas</a></li>
                 <li><a href="/">¿Comó funciona?</a></li>
                 <li><a href="/">Precios</a></li>
-                <li><a href="/">Documentación</a></li>
+                <li><Link to="/documentacion">Documentación</Link></li>
                 <li><a href="/"><img src={IconSupport} alt="Logo" /></a></li>
             </ul>
         </div>
@@ -32,7 +35,11 @@ const toolbar = props => (
             <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
     </nav>
+
+    <Route exact path="/documentacion/" component={Documentacion} />
+
   </header>
+  </Router>
 );
 
 export default toolbar;

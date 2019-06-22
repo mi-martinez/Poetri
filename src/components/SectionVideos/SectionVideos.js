@@ -40,14 +40,14 @@ export default class BackgroundSlide extends Component {
     };
     return (
       <div className="slide-background">
-        <div className="slide-background__infostatic">
-          <div className="slide-background__infostatic-content">
-            <h2>¿Qué sucede cuando se usa Poetri?</h2>
-            <p>Las empresas dejan de preocuparse por la infraestructura, por la tecnologia, y generan mayor valor a sus clientes.</p>
-            <p>Poetri soporta los principales lenguajes de programación (Poetri Poliglota).</p>
+          <div className="slide-background__infostatic">
+            <div className="slide-background__infostatic-content">
+              <h2>¿Qué sucede cuando se usa Poetri?</h2>
+              <p>Las empresas dejan de preocuparse por la infraestructura, por la tecnologia, y generan mayor valor a sus clientes.</p>
+              <p>Poetri soporta los principales lenguajes de programación (Poetri Poliglota).</p>
+            </div>
+            <img src={Lenguajes} />
           </div>
-          <img src={Lenguajes} />
-        </div>
         <Slider {...settings}>
           <div className="slide-background__content bg-slide1">
             <div className="slide-background__content-container">

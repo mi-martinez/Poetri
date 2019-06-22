@@ -2,10 +2,11 @@
   margin: auto;
   position: relative;
   &__infostatic{
-    max-width: 600px;
     position: absolute;
     top: 100px;
-    z-index: 9;
+    z-index: 2;
+    max-width: 41.666667%;
+    padding-right: 15px;
     h2{
       color:#fff;
       margin-bottom: 50px;
@@ -18,10 +19,13 @@
     }
     img{
       margin-top: 30px;
+      margin-right: 80px;
+      float: right;
+      border-left: 1000px solid #ffffff;
     }
     &-content{
       float: right;
-      width: 60%;
+      width: 460px;
     }
   }
   .slick-slider{
