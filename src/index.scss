@@ -17,6 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
+$break-small: 768px;
 body {
   margin: 0;
   font-family: 'ObjektivMk1W03-Regular' !important;
@@ -67,6 +68,9 @@ a{
     padding: 55px 65px !important;
     text-align: center;
     margin: 0 auto 110px !important;
+    @media screen and (max-width: $break-small){
+      padding: 30px 25px 50px !important;
+    }
     h2{
       width: 100%;
       margin-bottom: 28px;
@@ -92,7 +96,10 @@ a{
       margin-top: 40px !important;
     }
 }
-.section-done-poetri-img{ 
+.section-done-poetri-img{
+  @media screen and (max-width: $break-small){
+    margin-bottom: 50px;
+  }
 img {
   width: 100%;
   max-width: 80px;
@@ -101,12 +108,18 @@ p {
     font-size: 18px !important;
     font-weight: 600 !important;
     margin-top: 20px !important;
+    @media screen and (max-width: $break-small){
+      margin-top: 10px !important;
+    }
 }
 .img-g {
   height: 148px;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: $break-small){
+    height: auto;
+  }
 }
 }
 .modal{

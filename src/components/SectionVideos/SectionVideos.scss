@@ -1,3 +1,4 @@
+$break-small: 768px;
 .slide-background{
   margin: auto;
   position: relative;
@@ -77,7 +78,7 @@
           position: absolute;
           background: black;
           width: 60px;
-          height: 115px;      
+          height: 115px;
           display: flex;
           justify-content: center;
           align-items: flex-end;
@@ -113,6 +114,10 @@
     position: absolute;
     bottom: 194px;
     right: calc(50% - 614px);
+    @media screen and (max-width: $break-small){
+      right: auto;
+      left: 0;
+    }
   }
   .slick-active button {
     background: #000000 !important;

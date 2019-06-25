@@ -51,7 +51,7 @@ class App extends Component {
                 <h3><span></span>Caracteristicas</h3>
                 <Carousel />
               </div>
-              <div className="row section-done-poetri col-10 justify-content-center">
+              <div className="row section-done-poetri col-lg-10 col-12 justify-content-center">
                   <h2>¿Qué se puede hacer con Poetri?</h2>
                   <div className="col-lg-4 section-done-poetri-img">
                     <div className="img-g"><img src={ImgGif}/> </div>
