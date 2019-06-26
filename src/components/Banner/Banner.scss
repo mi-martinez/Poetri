@@ -1,143 +1,111 @@
 $break-small: 768px;
+#banner{
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  transition: all 0.5s;
+  padding-top: 100px;
+  .banner-home__title{
+    h1{
+      font-family: 'ObjektivMk1W03-Medium';
+      font-weight: 500;
+      font-size: 53px;
+      line-height: 73px;
+      color: #fff;
+      margin-bottom: 0px;
+      span{
+        color: #000;
+        background: #fff;
+      }
+    }
+    .last{
+      font-size: 64px;
+    }
+    p{
+      font-family: 'ObjektivMk1W03-Medium';
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 59px;
+      color: #fff;
+      text-align: right;
+      margin-top: -10px;
+    }
+  }
+  .banner-home__descrip{
+    margin-top: 80px;
+    p{
+      color: #fff;
+      font-size: 20px;
+      line-height: 27px;
+      font-family: 'ObjektivMk1W03-Regular';
+      margin-bottom: 45px;
+    }
+  }
+  .banner-home__buttons{
+    .react-tabs{
+       &__tab-list{
+         border: none;
+       }
+        &__tab{
+          font-family: 'ObjektivMk1W03-Regular';
+          font-size: 16px;
+          line-height: 22px;
+          color: #fff;
+          text-decoration: none;
+          padding: 0 0px 20px 0;
+          text-align: center;
+          margin: 0 40px 0 0;
+          display: inline-flex;
+          justify-content: center;
+          width: 30%;
+          position: relative;
+          cursor: pointer;
+          &--selected{
+            background: none;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid #fff;
+          }
+        }
+        &__tab-panel{
+          a{
+            width: 203px;
+            height: 41px;
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 20px;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            line-height: 41px;
+            margin-top: 50px;
+          }
+          &--selected{
+            &:before{
+              content: "";
+              width: 580px;
+              height: 1px;
+              background: #fff;
+              position: absolute;
+              left: -100%;
+              top: 115px;
+            }
+          }
+        }
+    }
+  }
+}
 .banner-home{
-  height: calc(100vh - 57px);
-  display: flex;
-  align-items: center;
-  @media screen and (max-width: $break-small){
-    flex-wrap: wrap;
-  }
-  &__left{
-    background-image: url('../../assets/images/solicitar-asesoria-banner.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    @media screen and (max-width: $break-small){
-      width: 100%;
-      height: 50%;
-    }
-    &:before{
-      content: "";
-      background: #D8D8D8;
-      opacity: 0.84;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-    }
-    a{
-      color: #00FF29;
-      border: 1px solid #000000;
-      box-sizing: border-box;
-      margin-right: 12px;
-      position: relative;
-      z-index: 0;
-      transition: all .3s;
-      &:before{
-        content: '';
-        height: 100%;
-        width: 100%;
-        background: #f5f5f5;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transition: all .3s;
-        z-index: -1;
-        transform: scale(0, 0);
-      }
-      &:after{
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #000000;
-        z-index: -2;
-
-      }
-      &:hover{
-        color: #000000;
-        &:before{
-          transform: scale(1, 1);
-        }
-      }
-    }
-  }
-  &__right{
-    background-image: url('../../assets/images/resistrate-gratis-banner.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    @media screen and (max-width: $break-small){
-      width: 100%;
-      height: 50%;
-    }
-    &:before{
-      content: "";
-      background: linear-gradient(180deg, rgba(33, 245, 67, 0.5) 4.88%, rgba(0, 0, 0, 0.5) 95.53%);
-      background-blend-mode: darken;
-      transform: rotate(180deg);
-      opacity: 0.5;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-    }
-    a{
-      color: #000000;
-      border: 1px solid #000000;
-      box-sizing: border-box;
-      margin-right: 12px;
-      position: relative;
-      z-index: 0;
-      transition: all .3s;
-      &:before{
-        content: '';
-        height: 100%;
-        width: 100%;
-        background: #000;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transition: all .3s;
-        z-index: -1;
-        transform: scale(0, 0);
-      }
-      &:after{
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #F5F5F5;
-        z-index: -2;
-
-      }
-      &:hover{
-        color: #00FF29;
-        &:before{
-          transform: scale(1, 1);
-        }
-      }
-    }
-  }
-  a{
-    box-sizing: border-box;
-    padding: 10px 17px;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 2;
-    @media screen and (max-width: $break-small){
-      margin-bottom: 15px;
+  background-image: url('../../assets/images/bg-slide-soy-empresa.jpg');
+}
+.banner-home2{
+  background-image: url('../../assets/images/bg-slide-soy-desarrollador.jpg');
+  .banner-home__title{
+    span{
+      opacity: .3;
     }
   }
 }
