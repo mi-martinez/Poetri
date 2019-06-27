@@ -6,7 +6,7 @@ const discoverPoetri = props => (
       <div className="section-discover-poetri" id="caracteristicas">
         <div className="row justify-content-center before--rotate">
           <h2>Descubre Poetri</h2>
-          <p className="col-lg-10">Serverless significa, literalmente, <strong>sin servidor</strong>, es allí donde Poetri pone a disposición todas sus caracteristicas y beneficios a la hora de implementar su código en la nube, sin altos costos de infraestructura, ni desarrolladores.</p>
+          <p className="col-lg-10 p-mas">Serverless significa, literalmente, <strong>sin servidor</strong>, es allí donde Poetri pone a disposición todas sus caracteristicas y beneficios a la hora de implementar su código en la nube, sin altos costos de infraestructura, ni desarrolladores.</p>
           <div className="col-lg-11 row-table--margin">
             <h3><span></span>Beneficios</h3>
             <div className="benefits-table">

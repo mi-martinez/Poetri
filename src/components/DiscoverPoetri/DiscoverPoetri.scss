@@ -4,6 +4,9 @@ $break-small: 768px;
   margin-bottom: 180px;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: $break-small){
+    margin-top: -6px;
+  }
   &:before{
     content: "";
     background: url('../../assets/images/bg-discover-1.svg') no-repeat center center;
@@ -28,11 +31,18 @@ $break-small: 768px;
     margin-bottom: 35px;
     margin-top: 40px;
   }
+  .p-mas{
+    @media screen and (max-width: $break-small)
+      {
+        text-align: center;
+      }
+  }
   h3{
     position: relative;
     padding-left: 30px;
     @media screen and (max-width: $break-small){
       padding-top: 15px;
+      padding-left: 0px;
     }
     span{
       position: absolute;
@@ -43,12 +53,19 @@ $break-small: 768px;
       background: #000;
       z-index: 2;
       border-right: 6px solid #00ff29;
+      @media screen and (max-width: $break-small){
+        display: none;
+      }
     }
   }
   .row-table--margin{
     margin-top: 50px;
     position: relative;
     z-index: 4;
+    @media screen and (max-width: $break-small){
+      margin-top: 5px;
+      text-align: center;
+    }
   }
 
   .benefits-table{
@@ -88,6 +105,9 @@ $break-small: 768px;
           width: 100%;
           max-width: 100%;
           margin: 0 0 20px 0;
+          line-height: 6.4vw;
+          font-size: 3.8vw;
+          text-align: left;
         }
         &:hover{
           transform: scale(1.12);
