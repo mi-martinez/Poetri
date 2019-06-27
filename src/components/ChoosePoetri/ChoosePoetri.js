@@ -16,6 +16,7 @@ const choosePoetri = props => (
       <div className="section-choose-poetri">
         <h2>¿Por qué escoger Poetri?</h2>
         <p>Poetri, ofrece soluciones más alla de las que ofrecen otras empresas enfocadas en Faas, Servelees, en esta comparación queremos enseñarte nuestro valor agregado como empresa.</p>
+        <div className="scrolleable-table">
         <div className="section-choose-poetri__table">
             <div className="section-choose-poetri__table-logos">
                 <figure className="pos-relative"><img src={LogoPoetrix82} /></figure>
@@ -89,10 +90,11 @@ const choosePoetri = props => (
               <figure><img src={Tick} /></figure>
             </div>
         </div>
+        </div>
         <div className="box-info">
           Con Poetri pagas unicamente tiempos de ejecución, sin costos ocultos como ancho de banda, actualizaciones, equipos de trabajo
         </div>
-        <a href="/" className="cta-start">Comienza Ahora</a>       
+        <a href="/" className="cta-start">Comienza Ahora</a>
 
       </div>
 );

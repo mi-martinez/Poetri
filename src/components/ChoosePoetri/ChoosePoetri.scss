@@ -13,11 +13,20 @@ $break-small: 768px;
       padding: 0;
     }
   }
+  .scrolleable-table{
+    @media screen and (max-width: $break-small){
+      overflow-x: scroll;
+      padding-bottom: 20px 0;
+    }    
+  }
   &__table{
     max-width: 1181px;
     margin: auto;
     width: 100%;
     position: relative;
+    @media screen and (max-width: $break-small){
+      width: 1181px;
+    }
     &:before{
       content: "";
       width: 134px;
