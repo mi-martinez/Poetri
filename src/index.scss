@@ -147,8 +147,8 @@ p {
     width: 71px;
     height: 181px;
     position: fixed;
-    top: -20px;
-    right: 120px;
+    top: -50px;
+    right: 60px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -157,6 +157,7 @@ p {
     line-height: 14px;
     padding-bottom: 10px;
     cursor: pointer;
+    z-index: 999;
     @media screen and (max-width: $break-small){
       background-position: center 70%;
       background-size: 50%;

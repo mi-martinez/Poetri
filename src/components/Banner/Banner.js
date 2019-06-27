@@ -10,16 +10,16 @@ export default class ChangeSlide extends Component {
 
     this.state = {
       class: "banner-home",
-      content: "Alcanza metas facilmente sin perder tiempo en infraestructura y sin perder de vista tu obejtivo real",
+      content: "Ahorra tiempo y recursos valisoso para enfocarte en darle valor a tus clientes.",
     };
   }
 
   cambiarClass = ()=>{
-    this.setState({class: "banner-home2", content:"Alcanza metas facilmente sin perder tiempo en infraestructura y sin perder de vista tu obejtivo real2" })
+    this.setState({class: "banner-home2", content:"No desesperes, crea el mundo que quieres sin perder tiempo en configuraciones o servidores." })
 
   }
   cambiarClass2 = ()=>{
-    this.setState({class: "banner-home", content:"Alcanza metas facilmente sin perder tiempo en infraestructura y sin perder de vista tu obejtivo real"})
+    this.setState({class: "banner-home", content:"Ahorra tiempo y recursos valisoso para enfocarte en darle valor a tus clientes."})
   }
 
 

@@ -1,3 +1,4 @@
+$break-small: 768px;
 .modal{
   background: rgba(0, 0, 0, 0.8);
 
@@ -7,9 +8,24 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     margin-top: 10%;
+    @media screen and (max-width: $break-small){
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 0px;
+      padding-top: 10px;
+      border: none; 
+      border-radius: 0px;
+    }
     .modal-content{
+      @media screen and (max-width: $break-small){
+        border: none !important;
+      }
       .modal-body{
         padding: 30px 0;
+        @media screen and (max-width: $break-small){
+          padding: 5px 0;
+          margin-bottom: 30px;
+        }
         img.logo{
           height: 44px;
           display: flex;
@@ -18,16 +34,20 @@
         .title-form{
           padding: 0 55px;
           margin-bottom: 25px;
+          @media screen and (max-width: $break-small){
+            padding: 0 25px;
+          }
           h2{
-            font-size: 20px;
+            font-size: 22px;
             line-height: 27px;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 14px;
           }
           p{
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 14px;
+            line-height: 24px;
             text-align: center;
+            margin-bottom: -12px;
           }
         }
         .redes {
@@ -36,6 +56,10 @@
             margin: 5px auto;
             align-items: center;
             justify-content: space-between;
+            @media screen and (max-width: $break-small){
+              width: 100%;
+              margin: 20px auto;
+            }
             hr{
               height: 1px;
               background: #e0e0e0;
@@ -44,6 +68,9 @@
               margin: 0;
             }
             a{
+              @media screen and (max-width: $break-small){
+                display: none;
+              }
               &:nth-child(2){
                 margin-left: 20px;
               }
@@ -51,9 +78,12 @@
         }
         form{
           padding: 0 55px;
+          @media screen and (max-width: $break-small){
+            padding: 0 25px;
+          }
           label{
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 14px;
+            line-height: 20px;        
             margin-bottom: 5px;
           }
           input, select, textarea{
@@ -61,14 +91,23 @@
             border: 1px solid #EAEAEA;
             box-sizing: border-box;
             border-radius: 0;
-            font-size: 10px;
+            font-size: 14px;
             line-height: 14px;
             color: #a6a6a6;
+            -webkit-appearance: none;
             &::placeholder{
-              font-size: 10px;
-              line-height: 14px;
+              font-size: 14px;
+              line-height: 22px;
               color: #a6a6a6;
             }
+          }
+          select{
+            background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPHBhdGggZD0ibTEyMS4zLDM0LjZjLTEuNi0xLjYtNC4yLTEuNi01LjgsMGwtNTEsNTEuMS01MS4xLTUxLjFjLTEuNi0xLjYtNC4yLTEuNi01LjgsMC0xLjYsMS42LTEuNiw0LjIgMCw1LjhsNTMuOSw1My45YzAuOCwwLjggMS44LDEuMiAyLjksMS4yIDEsMCAyLjEtMC40IDIuOS0xLjJsNTMuOS01My45YzEuNy0xLjYgMS43LTQuMiAwLjEtNS44eiIgZmlsbD0iIzAwMDAwMCIvPgogIDwvZz4KPC9zdmc+Cg==");
+            display: block !important;
+            background-size: 12px;
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 10px);
+            background-position-y: center;
           }
           textarea{
             min-height: 99px;
@@ -91,6 +130,11 @@
             padding: 0;
             float: right;
             position: relative;
+            @media screen and (max-width: $break-small){
+              font-size: 18px;
+              width: 215px;
+              height: 42px;
+            }
             &:after{
               content: "";
               position: absolute;
