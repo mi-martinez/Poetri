@@ -7,40 +7,50 @@ $break-small: 768px;
   background-size: cover;
   transition: all 0.5s;
   padding-top: 100px;
+  display: flex;
+  align-items: center;
   .banner-home__title{
     h1{
       font-family: 'ObjektivMk1W03-Medium';
       font-weight: 500;
-      font-size: 53px;
-      line-height: 73px;
+      font-size: 7vh;
+      line-height: 10.2vh;
       color: #fff;
       margin-bottom: 0px;
+      @media screen and (max-width: $break-small){
+        font-size: 6.8vh;
+        line-height: 10vh;
+      }
       span{
         color: #000;
         background: #fff;
       }
     }
     .last{
-      font-size: 64px;
+      font-size: 6.4vh;
     }
     p{
       font-family: 'ObjektivMk1W03-Medium';
       font-weight: 500;
-      font-size: 43px;
-      line-height: 59px;
+      font-size: 5vh;
+      line-height: 6.3vh;
       color: #fff;
-      text-align: right;
-      margin-top: -10px;
+      margin-top: -1.4vh;
+      padding-left: 24vh;
+      width: max-content;
+      @media screen and (max-width: $break-small){
+        padding-left: 20vh;
+      }
     }
   }
   .banner-home__descrip{
-    margin-top: 80px;
+    margin-top: 4.5vh;
     p{
       color: #fff;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 27px;
       font-family: 'ObjektivMk1W03-Regular';
-      margin-bottom: 45px;
+      margin-bottom: 3vh;
     }
   }
   .banner-home__buttons{
@@ -107,7 +117,7 @@ $break-small: 768px;
   background-image: url('../../assets/images/bg-slide-soy-desarrollador.jpg');
   .banner-home__title{
     span{
-      opacity: .3;
+      opacity: .2;
     }
   }
 }
