@@ -16,8 +16,8 @@ $break-small: 768px;
   .scrolleable-table{
     @media screen and (max-width: $break-small){
       overflow-x: scroll;
-      padding-bottom: 20px 0;
-    }    
+      padding: 20px 0;
+    }
   }
   &__table{
     max-width: 1181px;
