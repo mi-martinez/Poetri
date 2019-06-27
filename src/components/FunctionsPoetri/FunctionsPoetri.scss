@@ -5,23 +5,40 @@ $break-small: 768px;
     max-width: 460px;
     float: right;
     padding-top: 40px;
+    @media screen and (max-width: $break-small){
+      max-width: 100%;
+      float: none;
+    }
     h2{
       padding-right: 50px;
       margin-bottom: 20px;
       font-size: 28px;
       line-height: 36px;
       max-width: 410px;
+      @media screen and (max-width: $break-small){
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+      }
     }
     p{
       margin-bottom: 20px;
       font-size: 16px;
       line-height: 26px;
+      @media screen and (max-width: $break-small){
+        text-align: center;
+      }
     }
   }
   .react-tabs{
     &__tab-list{
       border: none;
       position: relative;
+      @media screen and (max-width: $break-small){
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+      }
       .last{
         position: absolute;
         top: 0;
@@ -44,6 +61,7 @@ $break-small: 768px;
       transition: all .4s ease;
       @media screen and (max-width: $break-small){
         display: block;
+        max-width: 40%;
       }
 
       &:after{
@@ -56,11 +74,20 @@ $break-small: 768px;
       &--name-function{
         position: relative;
         padding: 30px 0px 10px 20px;
+        @media screen and (max-width: $break-small){
+          padding: 15px 10px 10px;
+        }
         p{
           font-size: 19px;
           line-height: 26px;
           font-family: 'ObjektivMk1W03-Medium';
           padding-bottom: 20px;
+          @media screen and (max-width: $break-small){
+            font-size: 3.3vw;
+            line-height: 14px;
+            padding-bottom: 0;
+            margin-bottom: 15px;
+          }
         }
         span{
           color: #8D8D8D;
@@ -69,6 +96,10 @@ $break-small: 768px;
           font-family: 'ObjektivMk1W03-Regular';
           display: flex;
           align-items: center;
+          @media screen and (max-width: $break-small){
+            font-size: 3vw;
+            justify-content: center;
+          }
           img{
             margin-right: 10px;
           }
@@ -81,6 +112,9 @@ $break-small: 768px;
           width: 90%;
           height: 1px;
           background: #a9a9a9;
+          @media screen and (max-width: $break-small){
+            bottom: 35px;
+          }
         }
       }
       &-panel{
@@ -88,17 +122,26 @@ $break-small: 768px;
          background-size: initial;
          height: 657px;
          margin-top: 50px;
+         @media screen and (max-width: $break-small){
+           height: auto;
+           background: none;
+         }
          img{
            width: 168px;
            margin: 130px 0 25px 200px;
            @media screen and (max-width: $break-small){
-             margin: 0;
+             margin: 0 auto;
+             display: flex;
            }
          }
          &--content{
            padding: 0px 0 0 200px;
            max-width: 680px;
-
+           @media screen and (max-width: $break-small){
+             max-width: 90%;
+             margin: auto;
+             padding: 0;
+           }
            span{
              display: block;
              color: #00ff29;
@@ -106,6 +149,9 @@ $break-small: 768px;
              font-family: 'ObjektivMk1W03-Medium';
              position: relative;
              padding-left: 25px;
+             @media screen and (max-width: $break-small){
+               margin-top: 25px ;
+             }
              &:before{
                content: "";
                width: 11px;
@@ -121,6 +167,9 @@ $break-small: 768px;
               font-size: 14px;
               line-height: 19px;
               color: #FFFFFF;
+              @media screen and (max-width: $break-small){
+                color: #000;
+              }
            }
            input{
              width: 100%;
