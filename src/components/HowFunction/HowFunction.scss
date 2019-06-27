@@ -7,8 +7,15 @@ $break-small: 768px;
 .section-how-function{
   margin-top: 70px;
   padding: 100px 0;
+  @media screen and (max-width: $break-small){
+    margin-top: -60px;
+    padding: 60px 0;
+  }
   &__title{
     margin-bottom: 30px;
+    @media screen and (max-width: $break-small){
+      text-align: center;
+    }
     h2{
       color: #fff;
       margin-bottom: 25px;
