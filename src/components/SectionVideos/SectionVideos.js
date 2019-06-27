@@ -32,7 +32,7 @@ export default class BackgroundSlide extends Component {
     const settings = {
       dots: true,
       speed: 1000,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       pauseOnHover: true,
       slidesToShow: 1,
