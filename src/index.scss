@@ -76,6 +76,11 @@ a{
       margin-bottom: 28px;
       font-size: 26px;
       margin-top: -10px;
+      @media screen and (max-width: $break-small){
+        font-size: 24px;
+        margin-top: 10px;
+        line-height: 32px;
+      }
     }
     &__gif{
       background: #C4C4C4;
@@ -94,6 +99,9 @@ a{
     }
     p.p-st {
       margin-top: 40px !important;
+      @media screen and (max-width: $break-small){
+        margin-top: 0px !important;
+      }
     }
 }
 .section-done-poetri-img{
@@ -109,7 +117,7 @@ p {
     font-weight: 600 !important;
     margin-top: 20px !important;
     @media screen and (max-width: $break-small){
-      margin-top: 10px !important;
+      margin-top: 20px !important;
     }
 }
 .img-g {
@@ -119,6 +127,7 @@ p {
   justify-content: center;
   @media screen and (max-width: $break-small){
     height: auto;
+    margin: 10px 0;
   }
 }
 }

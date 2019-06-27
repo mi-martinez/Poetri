@@ -18,7 +18,10 @@ $break-small: 768px;
     position: relative;
     padding-left: 30px;
     @media screen and (max-width: $break-small){
-      padding-top: 15px;
+      padding-top: 0px;
+      margin-top: -5px;
+      text-align: center;
+      padding-left: 0px;
     }
     span{
       position: absolute;
@@ -29,6 +32,9 @@ $break-small: 768px;
       background: #000;
       z-index: 2;
       border-right: 6px solid #00ff29;
+      @media screen and (max-width: $break-small){
+        display: none;
+      }
     }
   }
   .square{
@@ -74,6 +80,9 @@ $break-small: 768px;
       line-height: 22px;
       color: #000;
       padding: 25px 0 0 50px;
+      @media screen and (max-width: $break-small){
+        padding: 25px 14px 0 90px;
+      }
     }
     &__number{
       display: inline-block;
@@ -84,6 +93,7 @@ $break-small: 768px;
         display: block;
         height: 180px;
         position: relative;
+        margin-bottom: -15px;
       }
       span:first-child{
         font-size: 290px;
@@ -99,6 +109,8 @@ $break-small: 768px;
           line-height: 180px;
           top: 0%;
           left: 50%;
+          margin-left: -75px;
+          margin-top: -25px;
         }
       }
       span:last-child{
@@ -108,8 +120,17 @@ $break-small: 768px;
         top: 120px;
         left: 80px;
         @media screen and (max-width: $break-small){
-          top: 30%;
-          left: 77%;
+          top: -70px;
+          left: 16px;
+          background: #fff;
+          border: 1px solid #000;
+          display: block;
+          text-align: center;
+          width: 60px;
+          border-radius: 50px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 36px; 
         }
       }
       }
@@ -207,6 +228,10 @@ $break-small: 768px;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    @media screen and (max-width: $break-small){
+      margin-top: -150px;
+      z-index: 1;
+    }
 }
 
 
