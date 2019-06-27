@@ -9,7 +9,7 @@ $break-small: 768px;
   height: 70px;
   z-index: 9;
   @media screen and (max-width: $break-small){
-    padding: 0 10px;
+    padding: 0 20px;
   }
     &__navigation{
       display: flex;
@@ -25,6 +25,9 @@ $break-small: 768px;
         bottom: -3px;
         left: 0;
         border-right: 8px solid #00FF29;
+        @media screen and (max-width: $break-small){
+          width: 180px;
+        }
       }
       @media (max-width: 768px) {
           justify-content: space-between;
@@ -192,6 +195,16 @@ $break-small: 768px;
 /* Michael */
 .toolbar_buttons_nmz{
   display: flex;
+  @media screen and (max-width: $break-small){
+    display: flex;
+    background: #ffffff30;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    top: 70px;
+    padding: 5px;
+  }
 }
 .toolbar_buttons_nmz:before {
   content: " ";
@@ -202,6 +215,9 @@ $break-small: 768px;
   top: 35px;
   z-index: 1;
   background: #8e8e8e;
+  @media screen and (max-width: $break-small){
+    display: none;
+  }
 }
 a.register {
   display: inline-block;
@@ -229,6 +245,11 @@ a.register {
     font-size: 16px;
     padding: 6px 24px;
     font-family: ObjektivMk1W03-Medium;
+}
+@media screen and (max-width: $break-small){
+  margin-right: 8px;
+  font-size: 3.8vw;
+  padding: 1vw 5vw;
 }
 }
 .button-open-modal {
