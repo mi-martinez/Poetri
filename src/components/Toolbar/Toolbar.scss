@@ -190,7 +190,9 @@ $break-small: 768px;
 
 
 /* Michael */
-
+.toolbar_buttons_nmz{
+  display: flex;
+}
 .toolbar_buttons_nmz:before {
   content: " ";
   height: 1px;
@@ -229,7 +231,7 @@ a.register {
     font-family: ObjektivMk1W03-Medium;
 }
 }
-a.asesoria {
+.button-open-modal {
   display: inline-block;
   padding: 4px 22px;
   background: #ffffff;
@@ -246,6 +248,7 @@ a.asesoria {
   color: #505050;
   margin-right: 16px;
   font-family: ObjektivMk1W03-Thin;
+  cursor: pointer;
   &:hover {
     border: 1px solid #000;
     color: #000;

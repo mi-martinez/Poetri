@@ -27,7 +27,7 @@ class HowFunction extends React.Component {
   render() {
   return(
   <div className="section-how-function container">
-    <div className="section-how-function__title">
+    <div className="section-how-function__title" id="como-funciona">
       <h2>¿Comó funciona?</h2>
       <p>Poetri es versatilidad:</p>
       <a href="/">Ver Documentación</a>

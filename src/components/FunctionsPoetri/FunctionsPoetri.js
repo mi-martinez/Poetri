@@ -1,6 +1,7 @@
 import React, { Component } from "react" ;
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.scss";
+import ModalSolicitar from '../ModalSolicitar/ModalSolicitar';
 
 import Energy from '../../assets/images/energy.svg';
 import Logo2 from '../../assets/images/logo-2.svg';
@@ -35,7 +36,7 @@ class FunctionsPoetri extends React.Component{
               </div>
               <div className="cta-asesoria">
                   <p>¿Quieres que Poetri desarrolle una función para tu empresa?</p>
-                  <a href="/">Solicitar Asesoria</a>
+                  <ModalSolicitar />
               </div>
               </div>
           </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import './DiscoverPoetri.scss';
 
 const discoverPoetri = props => (
-      <div className="section-discover-poetri">
+      <div className="section-discover-poetri" id="caracteristicas">
         <div className="row justify-content-center before--rotate">
           <h2>Descubre Poetri</h2>
           <p className="col-lg-10">Serverless significa, literalmente, <strong>sin servidor</strong>, es allí donde Poetri pone a disposición todas sus caracteristicas y beneficios a la hora de implementar su código en la nube, sin altos costos de infraestructura, ni desarrolladores.</p>

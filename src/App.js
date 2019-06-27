@@ -16,6 +16,7 @@ import ImgGif from './assets/images/poetri-dev.png';
 import ImgGif2 from './assets/images/create.png';
 import ImgGif3 from './assets/images/consume.png';
 
+import ModalSolicitar from './components/ModalSolicitar/ModalSolicitar';
 
 class App extends Component {
   state = {
@@ -76,6 +77,7 @@ class App extends Component {
         <div className="container">
           <ChoosePoetri />
         </div>
+        
         <Footer />
       </div>
     );

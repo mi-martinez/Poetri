@@ -71,7 +71,7 @@ $break-small: 768px;
           }
         }
         &__tab-panel{
-          a{
+          a.button-open-modal{
             width: 203px;
             height: 41px;
             background: #fff;
@@ -81,7 +81,9 @@ $break-small: 768px;
             text-align: center;
             font-size: 16px;
             line-height: 41px;
-            margin-top: 50px;
+            margin: 50px 0;
+            cursor: pointer;
+            padding: 0;
           }
           &--selected{
             &:before{

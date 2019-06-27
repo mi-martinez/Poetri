@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Banner.scss';
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import ModalSolicitar from '../ModalSolicitar/ModalSolicitar';
 
 export default class ChangeSlide extends Component {
   constructor(props) {
@@ -20,6 +21,7 @@ export default class ChangeSlide extends Component {
   cambiarClass2 = ()=>{
     this.setState({class: "banner-home", content:"Alcanza metas facilmente sin perder tiempo en infraestructura y sin perder de vista tu obejtivo real"})
   }
+
 
   render(){
     return (
@@ -45,7 +47,7 @@ export default class ChangeSlide extends Component {
               <a>Probar Ahora</a>
             </TabPanel>
             <TabPanel>
-              <a>Solicitar Asesoria</a>
+              <ModalSolicitar />
             </TabPanel>
           </Tabs>
 
