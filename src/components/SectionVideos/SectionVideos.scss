@@ -8,6 +8,11 @@ $break-small: 768px;
     z-index: 2;
     max-width: 41.666667%;
     padding-right: 15px;
+    @media screen and (max-width: $break-small){
+      top: calc((100vh - 60px) - 80vh);
+      max-width: 100%;
+      padding-right: 0px;
+    }
     h2{
       color: #fff;
       margin-bottom: 38px;
@@ -24,10 +29,21 @@ $break-small: 768px;
       margin-right: 80px;
       float: right;
       border-left: 1000px solid #ffffff;
+      @media screen and (max-width: $break-small){
+        margin-right: 5px;
+        float: left;
+        border: 0;
+        max-width: 100%;
+      }
     }
     &-content{
       float: right;
       width: 460px;
+      @media screen and (max-width: $break-small){
+        width: 90%;
+        margin: auto;
+        float: none;
+      }
     }
   }
   .slick-slider{
@@ -54,6 +70,9 @@ $break-small: 768px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media screen and (max-width: $break-small){
+      height: calc(100vh - 30px);
+    }
     &-container{
       max-width: 1300px;
       padding-right: 15px;
@@ -64,6 +83,9 @@ $break-small: 768px;
       justify-content: flex-end;
       align-items: flex-end;
       height: 100%;
+      @media screen and (max-width: $break-small){
+        justify-content: center;
+      }
       .content-box{
         max-width: 422px;
         width: 100%;
@@ -74,6 +96,12 @@ $break-small: 768px;
         position: relative;
         padding: 10px 0 10px 40px;
         cursor: pointer;
+        @media screen and (max-width: $break-small){
+            margin: 0px 0 70px 10px;
+            max-width: 100%;
+            width: 75vw;
+            padding: 10px 0 10px 22px;
+          }
         figure{
           position: absolute;
           background: black;
@@ -85,9 +113,17 @@ $break-small: 768px;
           padding-bottom: 20px;
           left: -35px;
           top: 20px;
+          @media screen and (max-width: $break-small){
+              width: 30px;
+              height: 85px;
+              left: -15px;
+            }
           img {
             width: 30px;
-        }
+            @media screen and (max-width: $break-small){
+                width: 15px;
+            }
+          }
         }
         h5{
           width: 100%;
@@ -96,6 +132,10 @@ $break-small: 768px;
           line-height: 34px;
           padding-left: 60px;
           margin-bottom: 2px;
+          @media screen and (max-width: $break-small){
+            font-size: 5vw;
+            line-height: 17px;
+          }
         }
         div{
           width: 100%;
@@ -116,7 +156,9 @@ $break-small: 768px;
     right: calc(50% - 614px);
     @media screen and (max-width: $break-small){
       right: auto;
-      left: 0;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%);
     }
   }
   .slick-active button {
@@ -137,9 +179,15 @@ p.name_bussi {
   color: #969696;
   letter-spacing: 1px;
   font-size: 16px;
+  @media screen and (max-width: $break-small){
+    font-size: 5vw;
+  }
 }
 p.name_bussi_dev {
   font-family: 'ObjektivMk1W03-Regular';
   font-size: 12px;
   margin-top: -7px !important;
+  @media screen and (max-width: $break-small){
+    font-size: 3vw;
+  }
 }

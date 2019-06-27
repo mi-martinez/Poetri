@@ -137,31 +137,50 @@ p {
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) -50%,rgba(0,0,0,1) 100%);
   background: linear-gradient(to bottom,  rgba(0,0,0,0.8) -50%,rgba(0,0,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+  .close-modal{
+    background-color: black;
+    background-image: url('./assets/images/cancel.svg');
+    background-repeat: no-repeat;
+    background-position: center 75%;
+    color: #00ff29;
+    border: 1px solid #00ff29;
+    width: 71px;
+    height: 181px;
+    position: fixed;
+    top: -20px;
+    right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 14px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    @media screen and (max-width: $break-small){
+      background-position: center 70%;
+      background-size: 50%;
+      width: 50px;
+      height: 120px;
+      top: -40px;
+      right: 20px;
+      font-size: 8px;
+    }
+  }
   .modal-dialog{
     max-width: 70vw;
+    @media screen and (max-width: $break-small){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 100%;
+    }
   }
   .modal-content{
-    .close-modal{
-      background-color: black;
-      background-image: url('./assets/images/cancel.svg');
-      background-repeat: no-repeat;
-      background-position: center 75%;
-      color: #00ff29;
-      border: 1px solid #00ff29;
-      width: 71px;
-      height: 181px;
-      position: fixed;
-      top: -20px;
-      right: 120px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      text-transform: uppercase;
-      font-size: 10px;
-      line-height: 14px;
-      padding-bottom: 10px;
-      cursor: pointer;
-    }
+
     .modal-body{
       padding: 0;
     }
