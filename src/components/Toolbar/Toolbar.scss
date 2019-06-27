@@ -180,7 +180,7 @@ $break-small: 768px;
     display: none;
   }
   .toolbar_buttons_nmz{
-    display: none !important;
+    display: none;
   }
 }
 
@@ -203,7 +203,8 @@ $break-small: 768px;
     left: 0;
     text-align: center;
     top: 70px;
-    padding: 5px;
+    padding: 8px 5px;
+    justify-content: flex-end;
   }
 }
 .toolbar_buttons_nmz:before {
@@ -247,9 +248,10 @@ a.register {
     font-family: ObjektivMk1W03-Medium;
 }
 @media screen and (max-width: $break-small){
-  margin-right: 8px;
+  margin-right: 10px;
   font-size: 3.8vw;
   padding: 1vw 5vw;
+  margin-left: 0;
 }
 }
 .button-open-modal {
@@ -273,5 +275,9 @@ a.register {
   &:hover {
     border: 1px solid #000;
     color: #000;
+}
+@media screen and (max-width: $break-small){
+    font-size: 3.8vw;
+    padding: 1vw 5vw;
 }
 }
