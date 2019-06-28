@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './SideDrawer.scss';
 
@@ -10,8 +11,8 @@ const sideDrawer = props => {
   return (
     <nav className={drawerClasses}>
       <ul>
-          <li><a href="/">Caracteristicas</a></li>
-          <li><a href="/">¿Comó funciona?</a></li>
+          <li><AnchorLink offset='80' href='#caracteristicas'>Caracteristicas</AnchorLink></li>
+          <li><AnchorLink offset='120' href='#como-funciona'>¿Comó funciona?</AnchorLink></li>
           <li><a href="/">Precios</a></li>
           <li><a href="/">Documentación</a></li>
       </ul>
