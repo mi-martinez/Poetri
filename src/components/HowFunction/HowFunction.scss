@@ -240,3 +240,26 @@ $break-small: 768px;
 .react-tabs__tab:focus:after {
   height: 0px !important;
 }
+.prueba-mike{
+  .react-tabs__tab-contain{
+    color: green;
+    }
+  .list-content{
+    height: 0;
+  }
+  &:hover{
+    .list-content{
+      height: 300px;
+    }
+  }
+}
+@media (max-width: 768px) {
+    .section-how-function {
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .section-how-function {
+        display: block;
+    }
+}

@@ -8,6 +8,7 @@ import SectionLogos from './components/SectionLogos/SectionLogos';
 import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
 import Carousel from './components/CarouselFeatures/CarouselFeatures';
 import HowFunction from './components/HowFunction/HowFunction';
+import HowFunctionRes from './components/HowFunction/HowFunctionRes';
 import SectionVideos from './components/SectionVideos/SectionVideos';
 import FunctionsPoetri from './components/FunctionsPoetri/FunctionsPoetri';
 import ChoosePoetri from './components/ChoosePoetri/ChoosePoetri';
@@ -71,6 +72,7 @@ class App extends Component {
         </div>
         <div className="row-content-how-function">
           <HowFunction/>
+          <HowFunctionRes/>          
         </div>
         <SectionVideos/>
         <FunctionsPoetri />
