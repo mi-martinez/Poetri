@@ -12,7 +12,7 @@ const footer = props => (
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-lg-2 text-center">
+          <div className="col-lg-2 text-center logo-fo">
             <img src={Logo} />
           </div>
           <div className="col-lg-2">
