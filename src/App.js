@@ -7,7 +7,7 @@ import Banner from './components/Banner/Banner';
 import SectionLogos from './components/SectionLogos/SectionLogos';
 import DiscoverPoetri from './components/DiscoverPoetri/DiscoverPoetri';
 import Carousel from './components/CarouselFeatures/CarouselFeatures';
-import HowFunction from './components/HowFunction/HowFunction';
+import HowFunction from './components/HowFunction/HowFunctionRes';
 import SectionVideos from './components/SectionVideos/SectionVideos';
 import FunctionsPoetri from './components/FunctionsPoetri/FunctionsPoetri';
 import ChoosePoetri from './components/ChoosePoetri/ChoosePoetri';
@@ -77,7 +77,7 @@ class App extends Component {
         <div className="container">
           <ChoosePoetri />
         </div>
-        
+
         <Footer />
       </div>
     );
