@@ -17,6 +17,7 @@ class FunctionsPoetri extends React.Component{
               <div className="contenedor-ficti">
               <h2>Probemos algunas funciones Poetri</h2>
               <p>Poetri le permite crear y desplegar servicios al nivel de una sola función, unidades independientes de funcionalidad enfocadas en hacer una cosa bien.</p>
+              <p>Selecciona una función para probar.</p>
               <TabList>
                 <Tab>
                   <div className="react-tabs__tab--name-function">
@@ -40,7 +41,7 @@ class FunctionsPoetri extends React.Component{
               </div>
               </div>
           </div>
-          <div className="col-lg-7 col-12 p-0">
+          <div className="col-lg-7 col-12 p-0 demo-fn">
           <TabPanel>
             <img src={Logo2} />
             <div className="react-tabs__tab-panel--content">

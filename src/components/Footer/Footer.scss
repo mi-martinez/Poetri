@@ -1,8 +1,15 @@
+$break-small: 768px;
 footer{
   background: #000;
   padding: 45px 0;
   border-bottom: 17px solid #171717;
   margin-top: 100px;
+  .logo-fo{
+  @media screen and (max-width: $break-small){
+    text-align: left !important;
+    padding-bottom: 30px;
+  }
+  }
   h2{
     font-size: 14px;
     line-height: 19px;
@@ -10,6 +17,9 @@ footer{
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin-bottom: 15px;
+    @media screen and (max-width: $break-small){
+      padding-top: 15px;
+    }
   }
   a{
     font-family: 'ObjektivMk1W03-Regular';
@@ -18,6 +28,10 @@ footer{
     color: rgba(255, 255, 255, 0.47);
     display: flex;
     margin-bottom: 10px;
+    @media screen and (max-width: $break-small){
+      font-size: 14px;
+      line-height: 19px;
+    }
     &:hover{
       color: #fff;
     }
