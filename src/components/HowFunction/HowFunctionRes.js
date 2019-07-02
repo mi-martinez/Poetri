@@ -62,9 +62,9 @@ class HowFunction extends React.Component {
 
 
   render() {
-    const nameclass = this.state.liked ? 'show' : 'hidden';
-    const nameclassTab2 = this.state.tab2 ? 'show' : 'hidden';
-    const nameclassTab3 = this.state.tab3 ? 'show' : 'hidden';
+    const nameclass = this.state.liked ? 'show-panel' : 'hidden';
+    const nameclassTab2 = this.state.tab2 ? 'show-panel' : 'hidden';
+    const nameclassTab3 = this.state.tab3 ? 'show-panel' : 'hidden';
 
   return(
   <div className="section-how-function section-how-function-responsive container">
